@@ -1,0 +1,38 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loading {
+    color: black;
+    padding: 1rem;
+    border-radius: 50%;
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes loading {
+  from {
+    background-color: green;
+  }
+  to {
+    background-color: green;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: purple;
+  }
+}

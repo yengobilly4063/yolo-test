@@ -1,0 +1,69 @@
+@import "../../../styles/colors.scss";
+
+.wrapper {
+  min-height: calc(100vh - 7rem);
+  background-color: $bg-main;
+  position: relative;
+}
+.header {
+  position: relative;
+  z-index: 20;
+}
+
+.bgimg,
+.capricon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.bgimg {
+  z-index: 10;
+  display: flex;
+  justify-content: right;
+  overflow: hidden;
+  img {
+    position: relative;
+    left: 25%;
+  }
+}
+
+.capricon {
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  img {
+    height: 80%;
+  }
+}
+
+.children {
+  position: relative;
+  z-index: 20 !important;
+}
+
+@media (max-width: 992px) {
+  .capricon {
+    img {
+      height: 60%;
+      opacity: 0.9;
+    }
+  }
+  .bgimg {
+    img {
+      left: 60%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .bgimg,
+  .capricon {
+    img {
+      display: none;
+    }
+  }
+}
