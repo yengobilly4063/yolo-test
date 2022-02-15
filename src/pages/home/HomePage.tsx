@@ -1,5 +1,6 @@
 import React from "react";
 import CurrencyForm from "../../components/currency/form/CurrencyForm";
+import CurrencyList from "../../components/currency/list/CurrencyList";
 import MainLayout from "../../components/layouts/main-layout/MainLayout";
 import styles from "./Home.module.scss";
 
@@ -23,7 +24,9 @@ const HomePage: React.FC = () => {
             <CurrencyForm />
           </div>
         </div>
-        <div className={styles.result}>Result</div>
+        <div className={styles.result}>
+          <CurrencyList />
+        </div>
       </div>
     </MainLayout>
   );

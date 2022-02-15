@@ -1,0 +1,35 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 1.5rem;
+
+  icon {
+    height: 3rem;
+  }
+
+  .info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    .amount {
+      color: gray;
+      font-size: 0.8rem;
+    }
+  }
+  .close {
+    padding-right: 2rem;
+    cursor: pointer;
+    &:hover {
+      color: brown;
+    }
+  }
+}
+.fade_line {
+  height: 1px;
+  width: 100%;
+  opacity: 0.5;
+  background: linear-gradient(to right, gray, gray 60%, #2a0a4a);
+}
