@@ -1,0 +1,17 @@
+$color-main: #d1bfbf;
+
+.form-group {
+  margin-bottom: 0.75rem;
+  position: relative;
+}
+
+input {
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 0.2rem;
+  border: 1px solid $color-main;
+  outline: none;
+  &:focus {
+    border: 1px solid steelblue;
+  }
+}

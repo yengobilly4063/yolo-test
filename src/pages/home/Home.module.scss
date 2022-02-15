@@ -1,3 +1,50 @@
-// Not really needed
 .wrapper {
+  font-family: "Open Sans", "sans-serif";
+  .infoForm {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+
+    .info {
+      .header {
+        margin-bottom: 0.5rem;
+      }
+    }
+    .form {
+      max-width: 25rem;
+    }
+    p {
+      line-height: 1.5rem;
+      color: gainsboro;
+    }
+    h2 {
+      font-size: 2.15rem;
+      line-height: 2.5rem;
+    }
+  }
+  .result {
+    max-width: 25rem;
+  }
+
+  .rightbottom::after {
+    content: "right";
+  }
+}
+
+@media (max-width: 850px) {
+  .infoForm {
+    flex-direction: column;
+    .info {
+      text-align: left;
+      .header {
+        display: block;
+      }
+    }
+  }
+
+  .rightbottom::after {
+    content: "bottom" !important;
+  }
 }
