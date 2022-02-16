@@ -45,6 +45,7 @@ const CurrencyForm: React.FC = () => {
       }
       if (currencies.length !== 0 && !results.includes(input)) {
         dispatch(getCurrency(currencies, input));
+        setInput("");
       }
     }
   }, [fetchedCurrencies]);
