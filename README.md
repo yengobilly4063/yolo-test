@@ -15,7 +15,7 @@ git clone https://github.com/yengobilly4063/yolo-test
 ### navigate to root directory
 
 ```
-cd malwarebytes
+cd yolo-test
 ```
 
 ### Run the following command on the terminal
