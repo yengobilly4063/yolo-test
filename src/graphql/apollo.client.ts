@@ -1,5 +1,5 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
-const apiUri = "https://api.blocktap.io/graphiql";
+const apiUri = "https://api.blocktap.io/graphql";
 
 const client = new ApolloClient({
   uri: apiUri,

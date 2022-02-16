@@ -1,21 +1,29 @@
 # Test Application for Yolo
 
-## Main Scripts
+## Prerequisite
 
-In the project directory, you can run:
+1. Make sure you have [Node](https://nodejs.org/en/) installed
 
-### `npm start`
+# How to run app
+
+### clone repository [yolo-test](https://github.com/yengobilly4063/yolo-test) to your local pc https://github.com/yengobilly4063/yolo-test
+
+```
+git clone https://github.com/yengobilly4063/yolo-test
+```
+
+### navigate to root directory
+
+```
+cd malwarebytes
+```
+
+### Run the following command on the terminal
+
+```
+npm run start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.1.

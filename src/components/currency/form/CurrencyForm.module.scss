@@ -2,6 +2,8 @@ $color-text: #777575;
 $btn-main: #fd4b24;
 
 .wrapper {
+  min-height: 15rem;
+  position: relative;
   padding: 2.25rem;
   width: 24rem;
   background-color: white;
@@ -20,6 +22,12 @@ $btn-main: #fd4b24;
     padding: 0.15rem;
     color: $color-text;
   }
+  .error {
+    display: block;
+    font-size: 0.75rem;
+    text-align: center;
+    color: crimson;
+  }
 
   .btn {
     width: 100%;
@@ -29,6 +37,10 @@ $btn-main: #fd4b24;
     font-weight: 600;
     color: white;
     background-color: $btn-main;
+    &:disabled {
+      background-color: gray;
+      cursor: not-allowed;
+    }
   }
   .terms {
     color: $color-text !important;

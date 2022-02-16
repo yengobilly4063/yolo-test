@@ -1,19 +1,25 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { getCurrencyState } from "../../../store/currency/currency.reducer";
 import { Currency } from "../../../store/currency/currency.types";
 import CurrenctItem from "../items/CurrenctItem";
 import styles from "./CurrencyList.module.scss";
 
-const currencies: Array<Currency> = [
-  { id: 1, name: "BTC", amount: 7842.27 },
-  { id: 2, name: "LTC", amount: 53.53 },
-  { id: 3, name: "XMR", amount: 56.42 },
-];
-
 const CurrencyList: React.FC = () => {
+  const { currencies } = useSelector(getCurrencyState);
+
+  if (currencies.length === 0) {
+    return (
+      <div className={styles.no_content}>
+        <h1>No search results!</h1>
+      </div>
+    );
+  }
+
   return (
     <div className={styles.list}>
-      {currencies.map((currency) => (
-        <CurrenctItem currency={currency} key={currency.id} />
+      {currencies.map((currency: Currency) => (
+        <CurrenctItem currency={currency} key={currency?.id} />
       ))}
     </div>
   );
